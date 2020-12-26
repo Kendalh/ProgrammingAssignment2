@@ -35,4 +35,4 @@ alldata <- cbind(data, las)
 
 # summarize the average
 summary <- alldata %>% group_by(Activity, Subject) %>% summarize_all(mean)
-write.table(summary, "summary.txt")
+write.table(summary, "summary.txt", row.name=FALSE)
